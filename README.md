@@ -48,6 +48,7 @@ The app is a **Star Wars Planets Explorer** that fetches and displays a list of 
 - **Room** is used for local caching.
 - The app first tries to fetch data from the API. If the API call fails, it falls back to cached data.
 - The cached data is updated whenever new data is fetched.
+- Both PlanetList and Planet Details pages provide offline support
 
 ### **Dynamic Images**
 - **Picsum Photos** is used to generate placeholder images for planets.
@@ -76,7 +77,8 @@ The app is a **Star Wars Planets Explorer** that fetches and displays a list of 
 ### **Error Handling**
 ✅ Generic error messages are displayed.  
 ❌ More detailed error messages (e.g., API failure vs. no internet) could be added.
-
+❌ Error handling related to Internet connectivity is defined in utility class. Couldn't include due to time constraints  
+❌ Error handling when API is down is not handled yet
 ---
 
 ## 📂 Project Structure
@@ -89,6 +91,7 @@ app/
 │   └── di/             # Hilt dependency injection modules  
 ├── domain/             # Use cases and business logic  
 ├── navigation/         # Navigation component  
+├── utility/            # Commonly used components which can be reused  
 ├── ui/                 # Jetpack Compose screens and components  
 │   ├── components/     # Reusable UI components  
 │   ├── screens/        # Screens for different app features  
