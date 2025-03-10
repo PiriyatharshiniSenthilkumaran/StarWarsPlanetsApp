@@ -102,6 +102,5 @@ app/
 
 ### Clone the repository:
 ```sh
-git clone https://github.com/yourusername/star-wars-planets-explorer.git
-
+git clone https://github.com/PiriyatharshiniSenthilkumaran/StarWarsPlanetsApp.git
 
